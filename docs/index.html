@@ -1,0 +1,661 @@
+<!--
+=========================================================
+* Soft UI Dashboard - v1.0.3
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <title>
+    CloudVio Employee Report 2021.
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+  <main class="main-content position-relative h-100 mt-1 border-radius-lg" style="max-width: 1280px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+      navbar-scroll="false">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <a href="/" class="navbar-main text-lg text-dark font-weight-bold text-decoration-none"> CloudVio Employee
+            Report 2021<span>.</span></a>
+        </nav>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-xl-4 col-sm-4 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Total Employees</p>
+                    <h5 class="font-weight-bolder mb-0">
+                      62,239
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-4 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Local Employees</p>
+                    <h5 class="font-weight-bolder mb-0">
+                      53,340
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-4 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Global Employees</p>
+                    <h5 class="font-weight-bolder mb-0">
+                      8,899
+                      <!-- <span class="text-success text-sm font-weight-bolder">+3%</span> -->
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-dark shadow text-center border-radius-md">
+                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-5 mb-lg-0 mb-4">
+          <div class="card mb-4 z-index-2">
+            <div class="card-header pb-0">
+              <h6>Positions</h6>
+            </div>
+
+            <div class="card-body p-3">
+              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mt-2 mb-2">
+                <div class="chart">
+                  <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+
+              <div class="container border-radius-lg">
+                <div class="row">
+                  <div class="col-3 py-3 ps-0">
+                    <div class="d-flex mb-2">
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Junior</p>
+                    </div>
+                    <h4 class="font-weight-bolder">993</h4>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-dark w-40" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-3 py-3 ps-0">
+                    <div class="d-flex mb-2">
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Senior</p>
+                    </div>
+                    <h4 class="font-weight-bolder">1051</h4>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-dark w-55" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-3 py-3 ps-0">
+                    <div class="d-flex mb-2">
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Director</p>
+                    </div>
+                    <h4 class="font-weight-bolder">341</h4>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-dark w-30" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-3 py-3 ps-0">
+                    <div class="d-flex mb-2">
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Chief</p>
+                    </div>
+                    <h4 class="font-weight-bolder">52</h4>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-dark w-15" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header pb-0">
+              <h6>Job Group</h6>
+            </div>
+            <div class="card-body p-3">
+              <div class="timeline timeline-one-side">
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    E
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Engineers</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">2,608</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    D
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Designers</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">1,484</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    M
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Marketer</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">1,243</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    R
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Researcher</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">297</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    O
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Other</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">3,574</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card z-index-2 mb-4">
+            <div class="card-header pb-0">
+              <h6>Departments</h6>
+            </div>
+            <div class="card-body p-3" style="transition: 1s ease;">
+              <div class="chart">
+                <svg id="dept_legend" class="w-100" height="50"></svg>
+                <svg id="dept" viewBox="0,0,720,740"></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header pb-0">
+              <div class="row">
+                <div class="col-lg-12 col-7">
+                  <h6>Nicknames</h6>
+                  <p class="text-sm mb-0">
+                    <span class="font-weight-bold">Top 10 English Nicknames</span> from Local Employees.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nicknames</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                        Counts</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#1</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Liam</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 139 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#2</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Noah</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 136 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#3</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Oliver</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 130 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#4</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">James</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 124 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#5</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Mason</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 112 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#6</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Sean</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 54 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#7</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Leo</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 52 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#8</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Brian</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 34 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#9</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Ryan</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 31 </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <div class="avatar avatar-sm me-3 text-dark" alt="xd">#10</div>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">John</h6>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> 20 </span>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer pt-3  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+                CloudVio Employee Report 2021.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  </div>
+  <!--   Core JS Files   -->
+  <script>
+    if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
+      window.location = "microsoft-edge:" + window.location.href;
+      alert("Browser not supported.")
+    }
+  </script>
+  <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/chartjs.min.js"></script>
+  <script src="//d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+  <script type="module">
+    var ctx = document.getElementById("chart-bars").getContext("2d");
+
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["Junior", "Senior", "Director", "Chief"],
+        datasets: [{
+          label: "Employees",
+          tension: 0.4,
+          borderWidth: 0,
+          borderRadius: 4,
+          borderSkipped: false,
+          backgroundColor: "#fff",
+          data: [993, 1051, 341, 52],
+          maxBarThickness: 15
+        },],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 500,
+              beginAtZero: true,
+              padding: 15,
+              font: {
+                size: 14,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+              color: "#fff"
+            },
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false
+            },
+            ticks: {
+              display: true
+            },
+          },
+        },
+      },
+    });
+
+
+    // select the svg area
+    var svg = d3.select("#dept_legend")
+
+    // Handmade legend
+    svg.append("rect").attr("x", 10).attr("y", 16).attr("width", 16).attr("height", 16).style("fill", "rgba(78, 121, 167, 0.6)")
+    svg.append("rect").attr("x", 120).attr("y", 16).attr("width", 16).attr("height", 16).style("fill", "rgba(242, 142, 44, 0.6)")
+    svg.append("rect").attr("x", 210).attr("y", 16).attr("width", 16).attr("height", 16).style("fill", "rgba(225, 87, 89, 0.6)")
+    svg.append("rect").attr("x", 310).attr("y", 16).attr("width", 16).attr("height", 16).style("fill", "rgba(186, 176, 171, 0.6)")
+    svg.append("text").attr("x", 30).attr("y", 25).text("Engineering").attr("class", "text-dark text-sm font-weight-bold").style("font-family", "var(--bs-font-sans-serif)").attr("alignment-baseline", "middle")
+    svg.append("text").attr("x", 140).attr("y", 25).text("Research").attr("class", "text-dark text-sm font-weight-bold").style("font-family", "var(--bs-font-sans-serif)").attr("alignment-baseline", "middle")
+    svg.append("text").attr("x", 230).attr("y", 25).text("Marketing").attr("class", "text-dark text-sm font-weight-bold").style("font-family", "var(--bs-font-sans-serif)").attr("alignment-baseline", "middle")
+    svg.append("text").attr("x", 330).attr("y", 25).text("Other").attr("class", "text-dark text-sm font-weight-bold").style("font-family", "var(--bs-font-sans-serif)").attr("alignment-baseline", "middle")
+
+    var width = 720,
+      height = 740;
+
+    var format = d3.format(",d");
+
+    var color = d3.scaleOrdinal()
+      .range(d3.schemeTableau10
+        .map(function (c) { c = d3.rgb(c); return c; }));
+
+    var stratify = d3.stratify()
+      .parentId(function (d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
+
+    var treemap = d3.treemap()
+      .size([width, height])
+      .padding(1)
+      .round(true);
+
+    d3.csv("treemap.csv", type, function (error, data) {
+      if (error) throw error;
+
+      var root = stratify(data)
+        .sum(function (d) { return d.value; })
+        .sort(function (a, b) { return b.height - a.height || b.value - a.value; });
+
+      treemap(root);
+
+      var node = d3.select("#dept")
+        .attr("viewBox", [0, 0, width, height])
+        .attr("width", width)
+        .attr("height", height)
+        .attr("class", "w-100 h-auto")
+        .style("border-radius", "12px")
+        .selectAll(".node")
+        .data(root.leaves())
+        .enter().append("a")
+        .attr("class", "node")
+        .attr("transform", d => `translate(${d.x0},${d.y0})`)
+
+      node.append("title").text(function (d) { return d.id + "\n" + format(d.value); })
+
+      node.append("rect")
+        .style("width", function (d) { return d.x1 - d.x0 + "px"; })
+        .style("height", function (d) { return d.y1 - d.y0 + "px"; })
+        .style("overflow", "hidden")
+        .attr("fill", function (d) { while (d.depth > 1) d = d.parent; return color(d.id); })
+        .attr("fill-opacity", 0.6)
+        .attr("rx", 7)
+        .attr("ry", 7)
+
+      function wrap() {
+        var self = d3.select(this),
+          textLength = self.node().getComputedTextLength(),
+          text = self.text();
+        while (textLength > (width - 2 * padding) && text.length > 0) {
+          text = text.slice(0, -1);
+          self.text(text + '...');
+          textLength = self.node().getComputedTextLength();
+        }
+      }
+
+      // A unique identifier for clip paths (to avoid conflicts).
+      const uid = `O-${Math.random().toString(16).slice(2)}`;
+      node.append("clipPath")
+        .attr("id", (d, i) => `${uid}-clip-${i}`)
+        .append("rect")
+        .attr("width", d => d.x1 - d.x0)
+        .attr("height", d => d.y1 - d.y0)
+        .attr("rx", 7)
+        .attr("ry", 7);
+
+      var text = node.append("text").attr("clip-path", (d, i) => `url(${new URL(`#${uid}-clip-${i}`, location)})`)
+
+      text.append("tspan").attr("x", 3).attr("dy", `1.1em`)
+        .attr("class", "text-base font-weight-bold")
+        // .attr("y", (d, i, D) => `${(i === D.length - 1) * 0.3 + 1.1 + i * 0.9}em`)
+        .text(function (d) { return d.id.substring(d.id.lastIndexOf(".") + 1).split(/(?=[A-Z][^A-Z])/g).join(""); }).style("font-family", "var(--bs-font-sans-serif)")
+
+      text.append("tspan").attr("x", 3).attr("dy", `1.1em`)
+        .attr("class", "text-dark text-sm").style("font-family", "var(--bs-font-sans-serif)")
+        .text(function (d) { return format(d.value); })
+    });
+
+    function type(d) {
+      d.value = +d.value;
+      return d;
+    }
+
+
+  </script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+
+  <script src="assets/js/soft-ui-dashboard.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+# Project
+.vscode/
+build/
+dist/
+__debug_bin
+
+/*.csv
+*.ipynb
+*.ipynb_checkpoints
